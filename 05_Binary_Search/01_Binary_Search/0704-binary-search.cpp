@@ -26,8 +26,9 @@ The space complexity is O(1), as the algorithm uses a constant amount of extra s
 class Solution {
   public:
     int search(vector<int> &nums, int target) {
+        int n = nums.size();
         int left = 0;
-        int right = nums.size() - 1;
+        int right = n - 1;
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
